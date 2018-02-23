@@ -1,0 +1,267 @@
+body {
+    background-color: whitesmoke;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    margin: 0;
+    grid-template-columns: 33.3% auto 33.3%;
+    grid-template-rows: 5rem 20em 35ems;
+}
+
+header {
+    width: 100%;
+    display: grid;
+    background-color: #323437;
+    box-sizing: border-box;
+    grid-template-columns: 33.3% auto 33.3%;
+    grid-template-rows: 5rem;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    position: fixed;
+    z-index: 2000;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header > div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header > div > h2 {
+    font-family: normal;
+    align-content: center;
+}
+
+header > div > h2 > a {
+    transition: .25s;
+}
+
+header > div > h2 > a:hover {
+    color: deeppink;
+    transition: .25s;
+}
+
+header > div + div {
+    justify-content: space-evenly;
+}
+
+header > div + div > h3 {
+    font-family: heavy;
+    color: deeppink;
+    font-size: 2em;
+    margin: auto;
+}
+
+article {
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+article > h1 {
+    color: white;
+    text-align: center;
+    font-family: heading;
+    font-size: 2em;
+}
+
+article > img {
+    object-fit: cover;
+    width: 20em;
+    max-height: 9em;
+}
+
+main {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: #323437;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em 0 0 0;
+}
+
+body > div {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: deeppink .5;
+}
+
+main > img,
+main > a > img {
+    width: 26em;
+    height: 20em;
+    object-fit: cover;
+}
+
+main > a > img:hover {
+    transform: scale(1.125);
+    transition: .25s;
+    filter: saturate(250%);
+}
+
+section {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: whitesmoke;
+    text-align: center;
+    line-height: 1.75;
+}
+
+section > img {
+    border-radius: 50%;
+    width: 20em;
+    height: 20em;
+    object-fit: cover;
+    margin: 1em;
+}
+
+section > h1,
+article > h2,
+section > h3 {
+    color: gray;
+    font-family: heading;
+    font-size: 2em;
+}
+
+section > h4 {
+    font-size: 4em;
+    font-family: heading;
+    color: gray;
+}
+
+section > p,
+article > p {
+    color: gray;
+    font-family: normal;
+    max-width: 30em;
+    margin: 2em auto;
+}
+
+section > a > h5 {
+    background-color: #323437;
+    color: deeppink;
+    padding: 1em;
+    font-family: normal;
+    transition: .25s;
+    max-width: 20em;
+    margin: 1em auto;
+    text-align: center;
+}
+
+section > a > h5:hover {
+    transform: scale(1.25);
+    transition: .25s;
+    font-family: heavy;
+}
+
+section + section {
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 30em;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+label {
+    color: gray;
+    font-family: heading;
+    margin: 2em 0 .5em 0;
+}
+
+label:first-of-type {
+    margin-top: 0;
+}
+
+input,
+textarea {
+    font-family: paragraph;
+    border: none;
+    background-color: silver;
+    width: 30em;
+    height: 2em;
+    font-size: 1em;
+}
+
+textarea#message {
+    height: 20em;
+    width: 30em;
+    word-break: break-all;
+    justify-content: flex-start;
+    text-overflow: clip;
+}
+
+
+input:focus,
+textarea:focus {
+    background-color: white;
+    transition: .25s;
+}
+
+button {
+    color: deeppink;
+    background-color: #323537;
+    border: none;
+    padding: .5em;
+    width: 5em;
+    margin: auto;
+    margin-top: 2em;
+    transition: .25s;
+}
+
+button:hover {
+    transform: scale(1.5);
+    transition: .25s;
+}
+
+main > img.big {
+    width: 50em;
+    height: auto;
+    position: absolute;
+}
+
+
+@font-face {
+    font-family: "nameheader";
+    font-style: bold;
+    src: url("squared.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "normal";
+    font-style: normal;
+    src: url("montlight.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "heavy";
+    font-style: normal;
+    src: url("montheavy.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "heading";
+    font-style: bold;
+    src: url("mermaid.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "paragraph";
+    font-style: normal;
+    src: url("Timeless.ttf") format("truetype");
+}

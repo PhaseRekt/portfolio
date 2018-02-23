@@ -1,0 +1,171 @@
+body {
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body > article:first-of-type {
+    margin: 0 auto;
+    max-width: 30em;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+article > a {
+    background-color: #121212;
+    font-family: heading;
+    padding: .5em;
+    transition: .25s;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 50em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+main > article > h2 {
+    color: white;
+    font-size: 2em;
+    padding: 3.5em 0;
+    text-align: center;
+    word-wrap: break-word;
+    transition: .25s;
+}
+
+main > h3 {
+    margin-right: 20em;
+    display: inline-block;
+}
+
+body > article > img {
+    border-radius: 50em;
+}
+
+img {
+    width: 14em;
+    height: 14em;
+    object-fit: cover;
+    margin: auto;
+    justify-content: space-around;
+}
+
+main > article {
+    width: 45%;
+    justify-content: center;
+    padding: auto;
+    margin-bottom: 1em;
+    transition: .25s;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+main > article {
+    background-size: cover;
+    background-position: center center;
+}
+
+main > article {
+    background-color: #121212;
+}
+
+
+main > article:hover,
+main > article > h2:hover,
+a:hover {
+    transform: scale(1.5);
+    color: aquamarine;
+}
+
+h1,
+h2,
+h3 {
+    font-family: heading;
+}
+
+h2 {
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+}
+
+h1 {
+    font-size: 8em;
+    margin-top: .25em;
+    margin-bottom: .25em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-family: paragraph;
+}
+
+section > article > img {
+    display: inline-block;
+    height: 9em;
+    width: 20em;
+    object-fit: cover;
+    border-radius: none;
+}
+
+section {
+    margin: 0 auto;
+    max-width: 40em;
+}
+
+section > article {
+    max-width: 40em;
+}
+
+section > article > h2 {
+    margin: 1em auto .5em auto;
+}
+
+section > article > p {
+    margin-bottom: 6em;
+}
+
+main#showcase {
+    max-width: 60em;
+}
+
+main#showcase > img:active {
+    height: 30em;
+    width: auto;
+    animation-delay: 2s;
+    transition: .25s;
+    position: absolute;
+}
+
+section#items > article > img {
+    width: 40em;
+    height: auto;
+}
+
+iframe {
+    margin: 1em;
+}
+
+h1 > a {
+    color: black;
+}
+
+@font-face {
+    font-family: "heading";
+    font-style: bold;
+    src: url("mermaid.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "paragraph";
+    font-style: normal;
+    src: url("Timeless.ttf") format("truetype");
+}
