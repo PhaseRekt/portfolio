@@ -158,7 +158,7 @@ main > img.big {
     body {
         display: block;
         background-position: center;
-        background-size: cover cover;
+        background-size: cover;
     }
 
     header {
