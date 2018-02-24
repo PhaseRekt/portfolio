@@ -157,8 +157,7 @@ main > img.big {
 
     body {
         display: block;
-        background-position: center;
-        background-size: cover;
+        background: url(../images/poeier.jpg) center top cover no-repeat;
     }
 
     header {
