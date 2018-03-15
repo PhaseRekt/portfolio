@@ -12,7 +12,7 @@ body {
 header {
     width: 100%;
     display: grid;
-    background-color: #323437;
+    background-color: #242424;
     box-sizing: border-box;
     grid-template-columns: 33.3% auto 33.3%;
     grid-template-rows: 5rem;
@@ -87,7 +87,7 @@ main {
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
-    background-color: #323437;
+    background-color: #242424;
     display: flex;
     justify-content: space-evenly;
     padding: 2em 0 0 0;
@@ -108,8 +108,8 @@ main > a > img {
 
 main > a > img:hover {
     transform: scale(1.125);
+    filter: saturate(200%);
     transition: .25s;
-    filter: saturate(250%);
 }
 
 section {
@@ -157,7 +157,8 @@ main > img.big {
 
     body {
         display: block;
-        background-image: url(../images/poeier3.jpg);
+        background-image: url(../images/titlebackdrop.png);
+        background-size: 100@;
         background-position: center;
         background-size: cover;
     }
@@ -181,6 +182,12 @@ main > img.big {
     header > div > h2 > a {
         color: transparent;
         background-image: url(../images/me.png);
+        width: 16px;
+        height: auto
+    }
+
+    header > div > h2 > a:before {
+        background-image: url(../images/me.png)
     }
 
     header > div > h2 + h2 > a {
